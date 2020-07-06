@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <div class="grid grid-rows-2 grid-flow-col gap-4">
-      <div class="row-span-3 flex-grow">
+    <div class="grid grid-rows-1 grid-flow-col gap-4">
+      <div class="row-span-1 flex-grow">
         <Sidebar msg="Liz Wang" />
       </div>
-      <div class="row-span-3 col-span-2">
+      <div class="row-span-1 col-span-2">
         <BlogTopPage msg="Welcome to Your Vue.js App"/>
       </div>
     </div>
