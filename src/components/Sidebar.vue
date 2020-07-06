@@ -10,20 +10,20 @@
       <div class="row-start-3 row-span-1 text-white">
         <ul>
           <li>
-            <a href="https://router.vuejs.org" target="_blank" rel="noopener">Blog</a>
+            <a href="#" target="_blank" rel="noopener">Blog</a>
           </li>
           <li>
-            <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">Project</a>
+            <a href="#" target="_blank" rel="noopener">Project</a>
           </li>
           <li>
-            <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">Who's Liz?</a>
+            <a href="#" target="_blank" rel="noopener">Who's Liz?</a>
           </li>
           <li>
-            <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Contact Liz</a>
+            <a href="#" target="_blank" rel="noopener">Contact</a>
           </li>
         </ul>
       </div>
-      <div class="row-start-4 row-span-1">
+      <div class="row-start-4 row-span-3">
         <p class="text-white">copy right</p>
       </div>
     </div>
