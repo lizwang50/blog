@@ -1,22 +1,21 @@
 <template>
-  <div id="app">
-    <Home />
+  <div class="blog-content row-span-1 col-span-4">
+    <BlogContent />
   </div>
 </template>
 
 <script>
-import Home from './views/Home.vue'
+import BlogContent from "../components/BlogContent.vue";
 
 export default {
-  name: 'App',
+  name: "Blog",
   components: {
-    Home
-  }
-}
+    BlogContent,
+  },
+};
 </script>
 
 <style>
-@import "./assets/css/tailwind.css";
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

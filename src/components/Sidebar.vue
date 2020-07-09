@@ -5,12 +5,20 @@
     </button>
     <div class="grid grid-flow-col grid-rows-5">
       <div class="row-start-1 row-span-1 flex justify-center mt-5">
-        <img class="rounded-full w-1/2" src="../assets/img/me.jpg" alt="Liz Wang photo" />
+        <img
+          class="rounded-full w-1/2"
+          src="../assets/img/me.jpg"
+          alt="Liz Wang photo"
+        />
       </div>
       <div class="row-start-2 row-span-1 text-white mt-5">
-        <p class="text-white font-display text-2xl">{{ msg }}</p>
+        <router-link to="/" class="text-white font-display text-2xl"
+          >Liz Wang</router-link
+        >
       </div>
-      <Navs />
+      <div class="row-start-3 row-span-1 text-white">
+        <NavsItems class="grid grid-cols-1 text-left ml-32" />
+      </div>
       <div class="row-start-6 row-span-1">
         <p class="text-sm text-white mb-4">
           Design by Liz Wang.
@@ -22,25 +30,23 @@
 </template>
 
 <script>
-import Navs from './Navs.vue'
+import NavsItems from "../components/NavsItems.vue";
 
 export default {
   name: "SideBar",
   props: {
-    msg: String
+    msg: String,
   },
   computed: {
     icon() {
       return ["fas", "times"];
-    }
+    },
   },
   components: {
-    Navs,
-  }
+    NavsItems,
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
+<style scoped></style>
