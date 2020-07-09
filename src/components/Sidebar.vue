@@ -1,40 +1,41 @@
 <template>
-  <nav class="bg-secondary rounded-r-lg">
-    <div class="grid grid-flow-col grid-rows-6">
-      <div class="row-start-1 row-span-1 flex justify-center">
-        <img class="rounded-full" src="http://unsplash.it/74/74?gravity=center" alt="myPhoto" />
+  <nav class="bg-secondary sidebar text-center">
+    <button class="flex-auto">
+      <font-awesome-icon class="text-white text-right" :icon="icon" />
+    </button>
+    <div class="grid grid-flow-col grid-rows-5">
+      <div class="row-start-1 row-span-1 flex justify-center mt-5">
+        <img class="rounded-full w-1/2" src="../assets/img/me.jpg" alt="Liz Wang photo" />
       </div>
-      <div class="row-start-2 row-span-1 text-white">
-        <p class="text-white">{{ msg }}</p>
+      <div class="row-start-2 row-span-1 text-white mt-5">
+        <p class="text-white font-display text-2xl">{{ msg }}</p>
       </div>
-      <div class="row-start-3 row-span-1 text-white">
-        <ul>
-          <li>
-            <a href="#" target="_blank" rel="noopener">Blog</a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener">Project</a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener">Who's Liz?</a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="row-start-4 row-span-3">
-        <p class="text-white">copy right</p>
+      <Navs />
+      <div class="row-start-6 row-span-1">
+        <p class="text-sm text-white mb-4">
+          Design by Liz Wang.
+          <br />All rights reserved.
+        </p>
       </div>
     </div>
   </nav>
 </template>
 
 <script>
+import Navs from './Navs.vue'
+
 export default {
   name: "SideBar",
   props: {
     msg: String
+  },
+  computed: {
+    icon() {
+      return ["fas", "times"];
+    }
+  },
+  components: {
+    Navs,
   }
 };
 </script>

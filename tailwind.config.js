@@ -240,7 +240,9 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
+      display : ['Dancing Script'],
       sans: [
+        'Comfortaa',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',

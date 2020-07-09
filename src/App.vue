@@ -4,8 +4,8 @@
       <div class="row-span-1 flex-grow">
         <Sidebar msg="Liz Wang" />
       </div>
-      <div class="row-span-1 col-span-2">
-        <BlogTopPage msg="Welcome to Your Vue.js App"/>
+      <div class="row-span-1 col-span-4">
+        <BlogTopPage />
       </div>
     </div>
   </div>
@@ -19,7 +19,7 @@ export default {
   name: 'App',
   components: {
     BlogTopPage,
-    Sidebar
+    Sidebar,
   }
 }
 </script>
@@ -27,9 +27,7 @@ export default {
 <style>
 @import "./assets/css/tailwind.css";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 </style>
